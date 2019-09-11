@@ -47,3 +47,13 @@ Repositorio destinado a colgar los contenidos de la asignatura de Sistemas Opera
 	- Copias de seguridad
 	- Reparación del sistema
 	- Rendimiento del sistema
+
+## Software necesario
+
+<a>Virtual Box</a>
+<a href="https://www.microsoft.com/es-es/software-download/windows10ISO">Windows 10</a>
+<a href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a>
+
+## Libro de la asignatura
+
+<a href="https://www.amazon.es/gp/product/8497719719/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=recomendadoslibros-21&creative=24630&linkCode=as2&creativeASIN=8497719719&linkId=6e8808531f122432ba326b33f999bbb1">Sistemas Operativos Monopuesto - Editorial Editex</a>
