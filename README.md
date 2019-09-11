@@ -50,9 +50,9 @@ Repositorio destinado a colgar los contenidos de la asignatura de Sistemas Opera
 
 ## Software necesario
 
-<a>Virtual Box</a>
-<a href="https://www.microsoft.com/es-es/software-download/windows10ISO">Windows 10</a>
-<a href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a>
+- <a href="https://www.virtualbox.org">Virtual Box</a>
+- <a href="https://www.microsoft.com/es-es/software-download/windows10ISO">Windows 10</a>
+- <a href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a>
 
 ## Libro de la asignatura
 
