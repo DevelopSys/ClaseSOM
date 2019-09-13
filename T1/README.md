@@ -2,7 +2,7 @@
 ## T1  Introducción a los sistemas informáticos
 
 - <a href="https://www.youtube.com/watch?v=8tpxARw1X04&t=145s">Historia de la informática</a>
-- <a href="https://www.youtube.com/watch?v=HQF-QbIoTCw>Máquina de Turing</a>
+- <a href="https://www.youtube.com/watch?v=HQF-QbIoTCw>Máquina de Turing</a> 
 - <a href="https://www.youtube.com/watch?v=zDAYZU4A3w0">CPU Google</a>
 - <a href="https://www.youtube.com/watch?v=2l6gI-ksdKs">Facebook Datacenter</a>
 
