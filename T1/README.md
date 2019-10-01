@@ -18,5 +18,9 @@
 
 La fecha de entrega será el Lunes 16 de Septiembre en un archivo con formato word / pdf en la carpeta compartida de Drive con el siguiente nombre: practica1_nombre.pdf
 
+- Investigar sobre los conceptos sobre la ley europea de protección de datos (RGPD), principales cosas referidas a la seguridad de los datos que expone la ley. 
+
+La fecha de entrega será el Lunes 7 de Octubre en un archivo con formato word / pdf en la carpeta compartida de Drive con el siguiente nombre: practica1_nombre.pdf
+
 ****
 
