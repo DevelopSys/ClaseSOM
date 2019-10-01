@@ -10,7 +10,7 @@
 
 ### Licencias Software Libre
 
-!(software libre)[../images/slibre.png]
+![software libre](../images/slibre.png)
 
 **Práctica a entregar**: Realiza un trabajo sobre los orígenes de la informática. En el se deberá incluir:
 - Generaciones de los ordenadores con sus características
