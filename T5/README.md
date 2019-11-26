@@ -4,6 +4,15 @@
 Get-help
 # obtener comandos disponibles
 get-command
+# ver alias del sistema
+alias
+````
+## Formateo de salida
+````
+Get-childitem | Format-Custom
+Get-childitem | Format-Table
+Get-childitem | Format-List
+Get-childitem | Format-Wide
 ````
 
 ## Trabajo con ficheros y directorios
@@ -57,20 +66,38 @@ Get-WmiObject -Class win32_products
 $sistema = Get-WmiObject -Class win32_operatingsystem
 $sistema.caption
 ````
-
 ## Canalizaciones
 ````
 Get-ChildItem -Path C:\Users\borjam -Recurse | measure -Property Length -Sum -Maximum -Minimum -Average
 Get-ChildItem -Path C:\Users\borjam -Recurse | sort -Property Length | select -First 1
 ````
-
 # Comandos linux
 
 ## Trabajo con ficheros y directorios
 ````
+ls /
+ls -l / 
+ls -a /
+ls -l -R
+mkdir carpeta
+rmdir carpeta
+touch nombrefichero
 ````
-## Información del sistema
+## Ver / editar contenido de ficheros
+````
+cat /home/administrador/fichero.txt
+nano /home/administrador/fichero.txt
+tail -n 1 /home/administrador/fichero.txt
+head -n 1 /home/administrador/fichero.txt
+````
 
+## Redirecciones a ficheros 
+````
+"Frase a volcar en un fichero" >> /home/administrador/carpeta/ficehro.txt
+*con una redirección sobreescribe el fichero*
+````
+
+## Información del sistema
 ````
 dmidecode -s propiedad
 cat /proc
