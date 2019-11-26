@@ -105,3 +105,18 @@ lshw -short
 lshw -c video
 who -H
 ````
+
+## Creación de script linux
+````
+# crear un fichero .sh
+nano /home/administrador/micript.sh
+# la primera línea tendrá el siguiente comentario 
+#!/bin/bash
+# dar permisos de ejecución
+chmod 777 /home/administrador/miscript.sh
+````
+
+
+
+
+
