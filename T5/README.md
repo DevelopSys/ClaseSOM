@@ -5,7 +5,9 @@ Get-help
 # obtener comandos disponibles
 get-command
 # ver alias del sistema
-alias
+get-alias
+#crear un alias nuevo
+new-alias -name nt -value notepad.exe
 ````
 ## Formateo de salida
 ````
