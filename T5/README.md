@@ -101,6 +101,9 @@ head -n 1 /home/administrador/fichero.txt
 
 ## Información del sistema
 ````
+# ver propiedades genéricas
+dmidecode -t propiedad
+# ver propiedades con másd detalle
 dmidecode -s propiedad
 cat /proc
 lshw -short
