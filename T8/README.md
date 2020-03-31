@@ -1,5 +1,17 @@
 # Gestión de usuarios Windows
 
+Permiten: 
+
+- El acceso al sistema
+- El acceso a recursos: carpetas y/o directorios mediante permisos otorgados por ACLs
+- El acceso a servicios: apagar máquina, acceso a programas, ejecución de scripts, etc... mediante directivas de grupo
+
+Hay que tener en cuenta que un usuario puede ser:
+- Local: pertenece a la máquina donde se logra
+- Red: pertenece a un dominio, utilizando un equipo cliente para logearse (infraestructura del colegio)
+
+Los usuarios creados por defecto son: Administrador, DefaultAccount, Invitado, Usuario de administración del antivirus
+
 Ruta donde se guardan de los perfil de usuarios
 
 ````
@@ -11,9 +23,11 @@ Tipos de perfiles
 - Temporales
 - En red
 
+````
+Get-WmiObject Win32_UserProfile
+````
+
 Entrada del registro que muestra el usuario actual de la máquina
-
-
 
 ## Comandos para la gestión de usuarios
 
@@ -129,9 +143,92 @@ Confirm                  {cf}
 Set-LocalUser -Name usuario -Description "ejemplo de descripción"
 ````
 
-
 #### Eliminar usuarios
 
 ````
 Remove-LocalUser usuario
+````
+
+# Gestión de grupos Windows
+
+Permiten: 
+
+- Simplificar la administración de acceso a recursos: carpetas y/o directorios mediante permisos otorgados por ACLs
+- El acceso a servicios: apagar máquina, acceso a programas, ejecución de scripts, etc... mediante directivas de grupo
+
+Consideraciones a tener en cuenta con los grupos:
+
+- Un grupo puede ser de usuarios, grupos y/o equipos
+- Un usuario puede pertenecer a varios grupos al mismo tiempo
+
+Los grupos por defecto son: Administradores, Usuarios COM distribuido, invitados, **Usuarios**, grupos de configuración
+
+
+### Mediante CMD 
+
+--
+#### Ver grupos
+````
+Net localgroup
+net localgroup grupo
+````
+#### Añadir grupo
+````
+net localgroup grupo /add
+````
+#### Eliminar grupo
+````
+net localgroup grupo /remove
+````
+#### Añadir usuario a un grupo
+````
+net localgroup grupo usuarios /add
+````
+#### Eliminar usuario de un grupo
+````
+net localgroup NombreGrupo nombreUsuario /delete
+````
+
+
+
+### Mediante PowerShell 
+
+--
+
+#### Ver grupos
+Para poder trabajar con usuarios locales se utilizan dos comandos: los referidos a los usuario y los referidos a los WmiObject
+
+````
+Get-LocalGroup
+Get-WmiObject Win32_Group
+````
+
+#### Agregar grupos
+
+````
+New-LocalGroup grupo
+````
+
+#### Agregar usuarios a grupos
+
+````
+Add-LocalGroupMember -Member usuario -Group grupo
+````
+
+#### Obtener los usuarios que pertenecen a un grupo
+
+````
+Get-LocalGroupMember grupo
+````
+
+#### Eliminar usuarios de un grupo
+
+````
+Remove-LocalGroupMember -Member usuario -Group grupo
+````
+
+#### Eliminar un grupo
+
+````
+Remove-LocalGroup grupo
 ````
